@@ -3,15 +3,14 @@ this is an API for translate, perfect for practice
 <p align="center">
   <img src="/bin/assets/Hitam Minimalis Gunung Logo.gif">
 </p>
-## HOW TO USE?
 
-#### /api/translate
+# HOW TO USE?
 
 ```http
  GET /api/translate
 ```
 
-| Paramete  | Description                    |             
+| Parameter  | Description                    |             
 | :-------- | :------------------------- |
 | `/api/translate/to/CodeCuntry/InsertYourText`| to translate the language **auto-detect language active**  |
 |`/api/translate/from/id/to/en/InsertYourText`|to translate specifically from your country's language to another country's language |
