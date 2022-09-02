@@ -1,6 +1,12 @@
 # Tran{S}late?
 this is an API for translate, perfect for practice
-![Logo align="center"](/bin/assets/Hitam%20Minimalis%20Gunung%20Logo.gif) 
+<img src="/bin/assets/Hitam%20Minimalis%20Gunung%20Logo.gif"
+     alt="this is my hexacopter I built"
+     style="display:block;
+            float:none;
+            margin-left:auto;
+            margin-right:auto;
+            ">
 ## HOW TO USE?
 
 #### /api/translate
