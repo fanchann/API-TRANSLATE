@@ -99,3 +99,6 @@ this is an API for translate, perfect for practice
 |`Chinese,(Taiwan)`|`zh-TW`|
 |`Turkish`|`tr`|
 |`Urdu`|`ur`|
+
+## want to try? 
+[API](https://translated1.herokuapp.com/api/translate/to/en)
