@@ -100,5 +100,5 @@ this is an API for translate, perfect for practice
 |`Turkish`|`tr`|
 |`Urdu`|`ur`|
 
-## want to try? 
-[API](https://translated1.herokuapp.com/api/translate/to/id/hello_im_here)
+## [WANT TO TRY?](https://translated1.herokuapp.com/api/translate/to/id/hello_im_here)
+
