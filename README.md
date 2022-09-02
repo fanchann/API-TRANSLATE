@@ -1,7 +1,7 @@
 # Tran{S}late?
 this is an API for translate, perfect for practice
 <p align="center">
-  <img width="600" height="200" src="/bin/assets/Hitam Minimalis Gunung Logo.gif">
+  <img src="/bin/assets/Hitam Minimalis Gunung Logo.gif">
 </p>
 ## HOW TO USE?
 
