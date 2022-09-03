@@ -6,8 +6,8 @@ this is an API for translate, perfect for practice
 
 # HOW TO USE?
 
-```http
- GET /api/translate
+```bash
+  /api/translate
 ```
 
 | Parameter  | Description                    |             
@@ -20,7 +20,7 @@ this is an API for translate, perfect for practice
 
 #### Requests Example
 
-```http
+```bash
   /api/translate/to/en/selamat_pagi
 ```
 
@@ -31,9 +31,10 @@ this is an API for translate, perfect for practice
 
 #### To Spesific Translate
 
-```http
-  /api/translate/from/id/to/en/selamat_malam
+```bash
+  /api/translate/from/id/to/en/selamat_pagi
 ```
+
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `id` | `Country code from language` | translate from indonesia |
