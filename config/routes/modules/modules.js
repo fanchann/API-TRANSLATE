@@ -3,7 +3,7 @@ const doc = require('./docs')
 
 const index = async (req, res) => {
     res.send({
-        status: 200,
+        status: 500,
         message: `Did you read the documentation on github?`
     })
 }
@@ -71,7 +71,7 @@ const documentation = async (req, res) => {
 
 const nothing = async (req, res) => {
     res.send({
-        status: 200,
+        status: 400,
         message: "where you looking for?"
     })
 }
