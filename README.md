@@ -3,15 +3,14 @@ this is an API for translate, perfect for practice
 <p align="center">
   <img src="/bin/assets/Hitam Minimalis Gunung Logo.gif">
 </p>
-## HOW TO USE?
 
-#### /api/translate
+# HOW TO USE?
 
-```http
- GET /api/translate
+```bash
+  /api/translate
 ```
 
-| Paramete  | Description                    |             
+| Parameter  | Description                    |             
 | :-------- | :------------------------- |
 | `/api/translate/to/CodeCuntry/InsertYourText`| to translate the language **auto-detect language active**  |
 |`/api/translate/from/id/to/en/InsertYourText`|to translate specifically from your country's language to another country's language |
@@ -21,7 +20,7 @@ this is an API for translate, perfect for practice
 
 #### Requests Example
 
-```http
+```bash
   /api/translate/to/en/selamat_pagi
 ```
 
@@ -32,9 +31,10 @@ this is an API for translate, perfect for practice
 
 #### To Spesific Translate
 
-```http
-  /api/translate/from/id/to/en/selamat_malam
+```bash
+  /api/translate/from/id/to/en/selamat_pagi
 ```
+
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `id` | `Country code from language` | translate from indonesia |
@@ -100,5 +100,5 @@ this is an API for translate, perfect for practice
 |`Turkish`|`tr`|
 |`Urdu`|`ur`|
 
-## want to try? 
-[API](https://translated1.herokuapp.com/api/translate/to/en)
+## [WANT TO TRY?](https://translated1.herokuapp.com/api/translate/to/id/hello_im_here)
+
