@@ -4,7 +4,9 @@ const doc = require('./docs')
 const index = async (req, res) => {
     res.send({
         status: 500,
-        message: `Did you read the documentation on github?`
+        data :{
+                message: `Did you read the documentation on github?`,
+        }
     })
 }
 
