@@ -1,6 +1,7 @@
 const translate = require('@vitalets/google-translate-api');
 const doc = require('./docs')
 
+//index
 const index = async (req, res) => {
     res.send({
         status: 500,
@@ -8,6 +9,7 @@ const index = async (req, res) => {
     })
 }
 
+//autoDetect Translate
 const autoDetectTranslate = async (req, res) => {
     let text = req.params.text;
     let to = req.params.to;
@@ -32,6 +34,7 @@ const autoDetectTranslate = async (req, res) => {
     });
 }
 
+//selectLanguageToTranslate
 const selectLangTranslate = async (req, res) => {
     let from = req.params.from;
     let text = req.params.text;
@@ -59,6 +62,8 @@ const selectLangTranslate = async (req, res) => {
     });
 }
 
+
+//documentation
 const documentation = async (req, res) => {
     res.json({
         How_To_Use: "/api/translate/to/CodeCountry/InsertYourText",
@@ -69,6 +74,8 @@ const documentation = async (req, res) => {
     })
 }
 
+
+//whereYouLookingFor
 const nothing = async (req, res) => {
     res.send({
         status: 400,
