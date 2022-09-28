@@ -1,3 +1,4 @@
+//this documentation of language
 const data = [
     ["Amharic", "am"],
     ["Arabic", "ar"],
