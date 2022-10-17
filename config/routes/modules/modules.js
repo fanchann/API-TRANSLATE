@@ -11,36 +11,44 @@ const index = async (req, res) => {
     })
 }
 
-//autoDetect Translate
-const autoDetectTranslate = async (req, res) => {
-    let text = req.params.text;
-    let to = req.params.to;
+// //autoDetect Translate
+// const autoDetectTranslate = async (req, res) => {
+//     let text = req.params.text;
+//     let to = req.params.to;
 
-    const transator = translate(text, {
-        to: to
-    }).then(result => {
-        let date = new Date().toISOString();
-        res.send({
-            status: 200,
-            method: 'GET',
-            toLanguage: to,
-            result: result.text,
-            time: date
-        })
-    }).catch(err => {
-        res.send({
-            status: 400,
-            message: `what this ${to}? please read the docs`,
-            time: new Date().toISOString()
-        });
-    });
-}
+//     const transator = translate(text, {
+//         to: to
+//     }).then(result => {
+//         let date = new Date().toISOString();
+//         res.send({
+//             status: 200,
+//             method: 'GET',
+//             toLanguage: to,
+//             result: result.text,
+//             time: date
+//         })
+//     }).catch(err => {
+//         res.send({
+//             status: 400,
+//             message: `what this ${to}? please read the docs`,
+//             time: new Date().toISOString()
+//         });
+//     });
+// }
 
 //selectLanguageToTranslate
 const selectLangTranslate = async (req, res) => {
-    let from = req.params.from;
-    let text = req.params.text;
-    let to = req.params.to;
+    if(req.query != null){
+        var from = req.query.from;
+        var text = req.query.text;
+        var to = req.params.to;        
+    }else{
+        res.send({
+            status: 400,
+            message: `nothing translated`,
+            time: new Date().toISOString()
+        });        
+    }
 
     const transator = translate(text, {
         from: from,
@@ -68,10 +76,11 @@ const selectLangTranslate = async (req, res) => {
 //documentation
 const documentation = async (req, res) => {
     res.json({
-        How_To_Use: "/api/translate/to/CodeCountry/InsertYourText",
-        Example_: "/api/translate/to/en/Aku adalah Kamu",
-        Spesific_Lang: "/api/translate/from/CodeFromLanguage/to/CodeToLanguage/InsertYourText",
-        Example__: "/api/translate/from/en/to/id/I am you",
+        How_To_Use: "/api/v1/?from={country}&to={country}&text={insert_your_text}",
+        Example: "/api/v1/?from=id&to=en&text=selamat_pagi",
+        Example_2: "/api/v1/?to=en&text=selamat_pagi",
+        // Spesific_Lang: "/api/translate/from/CodeFromLanguage/to/CodeToLanguage/InsertYourText",
+        // Example__: "/api/translate/from/en/to/id/I am you",
         Language: doc
     })
 }
@@ -87,7 +96,6 @@ const nothing = async (req, res) => {
 
 module.exports = {
     index,
-    autoDetectTranslate,
     selectLangTranslate,
     nothing,
     documentation
