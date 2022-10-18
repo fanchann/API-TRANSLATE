@@ -3,8 +3,7 @@ var router = express.Router();
 const translateMethod = require('./modules/modules')
 
 /* GET home page. */
-router.get('/api/v1', translateMethod.index)
-router.get('/api/v1/translate/to/:to/:text', translateMethod.autoDetectTranslate)
-router.get('/api/v1/translate/from/:from/to/:to/:text', translateMethod.selectLangTranslate)
+router.get('/api/v1/', translateMethod.selectLangTranslate)
+router.get('/api/v1/docs/', translateMethod.documentation)
 router.all('*', translateMethod.nothing)
 module.exports = router;
